@@ -1,20 +1,32 @@
-import React from 'react';
-import './Home.css';
-import heroBackground from '../../src/assets/hero-background.png';
+import { MyAvatarGroup } from '@/components/MyAvatarGroup'
+import React from 'react'
+import './Home.css'
 
-function Home() {
+const Home = () => {
   return (
-    <section className="home-hero">
-      <div className="home-hero-content">
-        <h1>Your next car is here.</h1>
-        <p>Discover the best cars in the world, test drive, buy, sell and enjoy the ride.</p>
-        <button className="btn-primary">Explore Cars</button>
+    <div className="hero-section">
+      <div className="left-section">
+        <h2>Your Journey,<br /> Your Car,<br />
+         Your Way</h2>
+        <p>Experience the ultimate freedom of choice with GoCar - tailor your adventure by choosing from our premium fleet of vehicles.</p>
+        <button className="btn-get-started"></button>
       </div>
-      <div className="home-hero-image">
-        <img src={heroBackground} alt="Hero Background" />
+      <div className="right-section">
+        <div className="avatar-section">
+        <MyAvatarGroup /> 
+        <h3>12.5K+ People</h3>
+        <p>has used our services such as renting, buying, or even selling their car.</p>
+         </div>
+         <div className="btn-all">
+        <button className='button-hero-last'>Rent</button>
+        <button className='button-hero-last'>Buy</button>
+        <button className='button-hero-last'>Sell</button>
+        <button className='button-hero-last'>Consult</button>
+        </div>
       </div>
-    </section>
-  );
+
+    </div>
+  )
 }
 
-export default Home;
+export default Home

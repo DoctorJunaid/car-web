@@ -40,7 +40,7 @@ const AVATARS = [
 export function MyAvatarGroup() {
   return (
     <TooltipProvider>
-      <AvatarGroup invertOverlap>
+      <AvatarGroup invertOverlap> 
         {AVATARS.map((avatar, index) => (
           <Tooltip key={index}>
             <TooltipTrigger asChild>

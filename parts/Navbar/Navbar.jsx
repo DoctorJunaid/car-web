@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import Drivoxe from '../src/assets/Drivoxe..svg'
+import Drivoxe from '../../src/assets/Drivoxe..svg';
 
 const Navbar = () => {
   // State to manage the visibility of the mobile menu
@@ -9,6 +9,9 @@ const Navbar = () => {
   // Function to toggle the mobile menu state
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   // Effect to close the menu when screen size changes (e.g., from mobile to desktop)
@@ -38,14 +41,17 @@ const Navbar = () => {
         {/* The 'active' class is toggled based on the isMenuOpen state */}
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           <ul className="navbar-links">
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Cars</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#" onClick={closeMenu}>Service</a></li>
+            <li><a href="#" onClick={closeMenu}>Cars</a></li>
+            <li><a href="#" onClick={closeMenu}>Pricing</a></li>
+            <li><a href="#" onClick={closeMenu}>About</a></li>
           </ul>
           <div className="navbar-buttons">
-            <button className="btn btn-contact">Contact</button>
-            <button className="btn btn-signup">Sign up</button>
+            <button className="btn btn-contact text-red-500">Contact</button>
+            <p>|</p>
+            <button className="btn btn-signup border rounded-4xl px-5 py-2 transition-all duration-300 ease-in-out hover:bg-indigo-600 hover:text-white hover:scale-105 hover:shadow-lg">
+            Sign up
+            </button>
           </div>
         </div>
 

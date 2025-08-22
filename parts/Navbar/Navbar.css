@@ -23,7 +23,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  max-width: 1200px;
   margin: 0 auto;
   color: #333;
 }
@@ -94,15 +93,16 @@ body {
 }
 
 .btn-contact:hover {
-  background-color: #e63939;
-  border-color: #e63939;
+  color: #b90000;
+  cursor: pointer;
 }
 
 /* 'Sign up' button with a solid red background */
 .btn-signup {
   background-color: #FF3B3B;
   color: #fff;
-  border: 1px solid #FF3B3B;
+ 
+  cursor: pointer;
 }
 
 .btn-signup:hover {
@@ -142,18 +142,10 @@ body {
 
 /* --- Responsive Design --- */
 /* Media query for tablets and smaller devices */
-@media (max-width: 992px) {
-  .navbar {
-    padding: 1rem;
-  }
-  .navbar-menu,
-  .navbar-links {
-    gap: 1.5rem;
-  }
-}
+
 
 /* Media query for mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .menu-icon {
     display: flex; /* Show the hamburger icon */
   }

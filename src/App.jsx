@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import { MyAvatarGroup } from './MyAvatarGroup'
-import Navbar from '../Navbar/Navbar';
+import { MyAvatarGroup } from './components/MyAvatarGroup'
+import Navbar from '../parts/Navbar/Navbar';
 import Home from '../pages/Home/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div className="main-container max-w-7xl mx-auto px-8">
       <Navbar />
       <Home />
       {/* <MyAvatarGroup /> */}
