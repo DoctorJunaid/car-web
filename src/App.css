@@ -1,0 +1,11 @@
+.hero-section-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content */
+  padding: 0 2rem; /* add padding to prevent content cut-off on mobile */
+  background-image: url(assets/hero-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
