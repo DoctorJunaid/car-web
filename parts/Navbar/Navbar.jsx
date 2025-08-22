@@ -47,8 +47,8 @@ const Navbar = () => {
             <li><a href="#" onClick={closeMenu}>About</a></li>
           </ul>
           <div className="navbar-buttons">
-            <button className="btn btn-contact text-red-500">Contact</button>
-            <p>|</p>
+            <button className="btn btn-contact text-red-500">Contact </button>
+          <div className="line text-red-500">|</div>
             <button className="btn btn-signup border rounded-4xl px-5 py-2 transition-all duration-300 ease-in-out hover:bg-indigo-600 hover:text-white hover:scale-105 hover:shadow-lg">
             Sign up
             </button>

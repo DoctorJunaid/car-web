@@ -6,7 +6,7 @@ import Home from '../pages/Home/Home';
 
 function App() {
   return (
-    <div className="main-container max-w-7xl mx-auto px-8">
+    <div className="main-container max-w-7xl mx-auto px-2">
       <Navbar />
       <Home />
       {/* <MyAvatarGroup /> */}

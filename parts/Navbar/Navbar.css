@@ -22,9 +22,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   margin: 0 auto;
   color: #333;
+  gap: 10px;
 }
 
 /* Logo styling */
@@ -61,7 +62,7 @@ body {
 }
 
 .navbar-links li a:hover {
-  color: #000;
+  color: #e62424;
 }
 
 /* Container for the action buttons */
@@ -71,29 +72,16 @@ body {
   gap: 1rem; /* Space between buttons */
 }
 
-/* General button styling */
-```
-.btn {
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 0.5rem; /* Slightly less rounded corners to match the image */
-  font-family: 'Syne', sans-serif;
-  font-size: 1rem; /* Adjusting font size to match the image */
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-```
+
+
 
 /* 'Contact' button with a solid red background, matching 'Sign up' */
 .btn-contact {
-  background-color: #FF3B3B;
-  border: 1px solid #FF3B3B;
-  color: #fff;
+  color: #FF3B3B;
 }
 
 .btn-contact:hover {
-  color: #b90000;
+  color: #ac0000;
   cursor: pointer;
 }
 
@@ -106,7 +94,8 @@ body {
 }
 
 .btn-signup:hover {
-  background-color: #e63939;
+  background-color: transparent;
+  color: #FF3B3B;
   border-color: #e63939;
 }
 
